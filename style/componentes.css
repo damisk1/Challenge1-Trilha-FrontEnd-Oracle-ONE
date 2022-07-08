@@ -1,0 +1,48 @@
+.section__titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+.boxes__line {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem 1rem;
+}
+
+/* buttons */
+button {
+    cursor: pointer;
+    transition: all .2s ease;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-family: 'Raleway';
+    border: 1px solid var(--btn-principal);
+}
+button:disabled {
+    background-color: var(--btn-principal-hover);
+    border-color: var(--btn-principal-hover);
+}
+.btn-primario {
+    color: var(--cor-branco);
+    background-color: var(--btn-principal);
+}
+.btn-primario:hover {
+    background-color: var(--btn-principal-hover);
+    border-color: var(--btn-principal-hover);
+}
+.btn-secundario {color: var(--btn-principal);}
+.btn-secundario:hover {background-color: var(--btn-secundario-hover);}
+
+@media screen and (max-width: 1100px) {
+    .boxes__line {grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (max-width: 900px) {
+    .section__titulo {font-size: 1.375rem;}
+    button {
+        font-size: .875rem;
+        padding: .75rem 1rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .boxes__line {grid-template-columns: repeat(2, 1fr);}
+}

@@ -1,0 +1,56 @@
+/*Sessão Menu*/
+.menu, .menu header, .menu nav, .menu nav .menu__list {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    padding: 0 9.5rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: var(--cor-de-texto-principal);
+}
+.menu header {
+    flex: 1;
+    gap: .5rem;
+}
+.menu__title {margin-right: 2rem;}
+.menu header img {height: 22px;}
+
+.menu nav .menu__list {
+    justify-content: space-between;
+    margin: 0;
+    gap: 2rem;
+}
+.menu__list__item a{
+    display: block;
+    padding: 2rem 0;
+}
+.menu__list__item a:hover {
+    color: var(--cor-de-link);
+    transform: translateY(2%);
+}
+.menu__list__item:last-child a {font-weight: 600;}
+.menu__list__item__contato {display: none;}
+
+
+@media screen and (max-width: 1100px) {
+    .menu {padding: 0 2rem;}
+    .menu nav .menu__list {gap: 1rem;}
+}
+
+@media screen and (max-width: 900px) {
+    .menu {padding: 0 1rem;}
+    .menu header{ padding: 1.15rem 0;}
+    .menu nav .menu__list {display: none;}
+    .menu__list__item__contato {
+        display: block;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu__list__item__contato {
+        font-size: .875rem;
+        font-weight: initial;
+    }
+}

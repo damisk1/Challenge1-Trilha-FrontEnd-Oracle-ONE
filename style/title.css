@@ -1,0 +1,66 @@
+/*Sessão Title*/
+.title {padding: 0 9.5rem;}
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--cor-de-texto-principal);
+    padding-bottom: 2rem;
+}
+.title__container {
+    display: flex;
+    flex-direction: column;
+}
+.title__bio {
+    margin-bottom: 1.5rem;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.title__subsection {
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+.title__profile {
+    width: 368px;
+    height: 368px;
+}
+.title__network {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.title__network__item a:hover {color: var(--cor-de-link);}
+
+
+@media screen and (max-width: 1100px) {
+    .title {padding: 0 2rem;}
+}
+
+@media screen and (max-width: 900px) {
+    .title__bio {
+        margin-bottom: .5rem;
+        font-size: 1.375rem;
+    }
+    .title__subsection {font-size: 1rem;}
+    .title__profile {
+        width: 146px;
+        height: 146px;
+    }
+    .title__network {gap: 1rem;}
+}
+
+@media screen and (max-width: 425px) {
+    .title {padding: 0 1rem;}
+    .title__div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+}
+

@@ -1,0 +1,30 @@
+/*Sessão Skills*/
+.skills{
+    padding: 2rem 9.5rem;
+    color: var(--cor-de-texto-principal);
+}
+.skills__title {margin-bottom: 2rem;}
+.skills__box {
+    background-color: var(--cor-branco);
+    padding: 1rem;
+    height: 176px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.skills__box ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .skills {padding: 2rem;}
+}
+
+@media screen and (max-width: 425px) {
+    .skills {padding: 1rem;}
+}
+
+

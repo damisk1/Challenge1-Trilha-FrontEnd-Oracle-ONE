@@ -1,0 +1,20 @@
+/*Sessão About*/
+.about {background-color: var(--cor-de-fundo-azul);}
+.about__container {
+    padding: 4rem 9.5rem;
+    color: var(--cor-de-texto-principal);
+}
+.about__title.section__titulo {text-align: left;}
+.about__paragraph {
+    max-width: 751px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1100px) {
+    .about__container {padding: 2rem;}
+}
+
+@media screen and (max-width: 425px) {
+    .about__container {padding: 1rem;}
+    .about__paragraph {font-size: .875rem;}
+}
